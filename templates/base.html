@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Купить проволоку</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+  </head>
+  <body>
+    <header class="page-header">
+      <h1><a href="/">Проволока стальная</a></h1>
+
+      <h2><a href="/">Наш склад в Киеве</a></h2>
+      <h3><a href="/">e-mail: provoloka@1gb.ua</a></h3>
+      <h4><a href="/">телефон: +3 8 095 946 59 33</a></h4>
+
+
+    </header>
+    <div class="content container">
+
+      {% block content %}
+      {% endblock content %}
+
+    </div>
+  {% include 'frame.html' %}
+  </body>
+</html>
